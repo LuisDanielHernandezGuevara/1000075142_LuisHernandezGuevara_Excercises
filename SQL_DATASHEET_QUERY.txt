@@ -1,0 +1,15 @@
+create database students_7512;
+
+create table DATASHEET (NAME VARCHAR(50) NOT NULL, 
+LASTNAME VARCHAR(50)NOT NULL, 
+EMAIL VARCHAR(50) NOT NULL, 
+password VARCHAR(50) NOT NULL,
+company VARCHAR(50) NOT NULL, 
+ADDRESS VARCHAR(50)NOT NULL,
+CITY VARCHAR(50) NOT NULL,
+ZIP_CODE INTEGER NOT NULL,
+MOBILE_PHONE INTEGER NOT NULL);
+
+INSERT INTO DATASHEET values('Luis','Hernandez','mail@gmail.com','Assfaj.&','Hexaware',
+	'Av S/N COL. Any','Mexico','67570','00000008');
+    

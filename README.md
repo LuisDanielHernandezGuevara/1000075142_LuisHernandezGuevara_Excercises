@@ -1,0 +1,5 @@
+# 75142_Query
+# Exercises Java and SQL
+
+- Java DATABASE CONNECTIONS W/ Mysql
+- QUERYS EXAMPLES MADE WITH Mysql

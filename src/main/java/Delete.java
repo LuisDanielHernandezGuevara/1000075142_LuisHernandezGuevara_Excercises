@@ -10,7 +10,7 @@ public class Delete {
 		
 		String urlDb = "jdbc:mysql://localhost:3306/students_75412?useSSL=false";
 		String user = "students";
-		String password = "Password123";
+		String password = "@Password123";
 		
 		
 		Connection cn = null;

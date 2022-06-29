@@ -9,12 +9,16 @@ public class INOUTParams {
 		Callable myStmn = null;
 		
 		try {
+			//get connection to DB
 		myCon = DriverManager.getConnection("jdbc:mysql//localhost:3306/studnets_75142","student","Password123");
 		
 		String departament = "Engineering";
 		
+		//Prepare SP call
 		myStmn = (Callable) myCon.prepareCall("{call greet_the_departament(?)}");
 		
+		
+		//Set params
 		((CallableStatement) myStmn).registerOutParameter(1,Types.VARCHAR);
 		((CallableStatement) myStmn).setString(1,departament);
 		
@@ -25,6 +29,7 @@ public class INOUTParams {
 		
 		System.out.print("Finished calling store procedure");
 		
+		//Get the value of the INOUT params
 		String Result = ((CallableStatement) myStmn).getString(1);
 		
 		System.out.print("\n The result = "+ Result);

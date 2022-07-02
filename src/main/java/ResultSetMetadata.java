@@ -28,9 +28,18 @@ public class ResultSetMetadata  {
 			int columnCount = rsMetaData.getColumnCount();
 			System.out.print("Column count :" + columnCount + "\n");
 			
+			for(int column = 1 ; column< columnCount; column++) {
+				System.out.print("Column name:"+ rsMetaData.getColumnName(column));
+				System.out.print("Column type name:" + rsMetaData.getColumnTypeName(column));
+				System.out.println();
+				System.out.print("Is Nullable:" + rsMetaData.isNullable(column));
+				System.out.print("Is auto increment: " + rsMetaData.isAutoIncrement(column));
+				
+			}
 			
-		}catch() {
 			
+		}catch(Exception ex) {
+			ex.printStackTrace();
 		}
 		
 		

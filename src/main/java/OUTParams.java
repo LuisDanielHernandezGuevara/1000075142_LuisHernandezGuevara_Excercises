@@ -7,7 +7,7 @@ import com.mysql.cj.jdbc.CallableStatement;
 public class OUTParams {
 	public static void main(String[] args) throws Exception{
 		
-		//Connection
+		//Create Connection
 		Connection con = null;
 		CallableStatement statement = null;
 		
